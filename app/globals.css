@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+body {
+  background: #050505;
+  color: #ededed;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  background: #0f0f0f;
+  border: 1px solid #1f1f1f;
+  border-radius: 16px;
+}
+
+.flow-line {
+  border-left: 2px dashed #333;
+}
+
+pre {
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.live-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
