@@ -66,10 +66,16 @@
         The web is broken for AI. Publishers block crawlers and earn nothing. Crawlers scrape anyway and risk lawsuits.
         We built the payment layer in between.
         <strong class="text-white">An MCP server gives any AI agent a wallet</strong> to pay for web content.
-        <strong class="text-white">A one-line middleware lets any publisher set a price.</strong>
+        <strong class="text-white">A one-line middleware lets any content provider set a price.</strong>
         Circle Nanopayments handle sub-cent, gas-free transactions on Arc.
         The result: Claude researches a topic across paid sites, pays fractions of a cent per page,
         and the content provider withdraws real USDC on-chain.
+        <br /><br />
+        But every payment is a data point. Without privacy, an agent's wallet becomes a
+        <strong class="text-white">public activity trail</strong> — revealing what it researches, which services it uses,
+        and how much it's willing to pay. That's a competitive intelligence leak no company can afford.
+        <strong class="text-white">NanoCrawl uses Unlink's ZK privacy pool</strong> to shield the agent's real identity:
+        a fresh disposable wallet per session, permanently destroyed when the work is done.
       </p>
     </section>
 
