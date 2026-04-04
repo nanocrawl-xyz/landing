@@ -199,21 +199,22 @@
       <div class="grid md:grid-cols-3 gap-6">
         <div class="card p-8 space-y-4">
           <div class="text-4xl font-bold text-blue-500/30">01</div>
-          <h3 class="text-lg font-semibold">Crawler hits a page</h3>
+          <h3 class="text-lg font-semibold">Price discovery</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Middleware classifies the request as a crawler via user-agent, headers, and cooperative signals.
-            Returns <code class="text-blue-400 bg-blue-400/10 px-1.5 py-0.5 rounded text-xs">HTTP 402</code> with a
-            <code class="text-blue-400 bg-blue-400/10 px-1.5 py-0.5 rounded text-xs">PAYMENT-REQUIRED</code> header
-            encoding price, network, and seller address.
+            Content providers publish pricing in <code class="text-blue-400 bg-blue-400/10 px-1.5 py-0.5 rounded text-xs">robots.txt</code> for proactive agents,
+            or return <code class="text-blue-400 bg-blue-400/10 px-1.5 py-0.5 rounded text-xs">HTTP 402</code> with a
+            <code class="text-blue-400 bg-blue-400/10 px-1.5 py-0.5 rounded text-xs">PAYMENT-REQUIRED</code> header on first contact.
+            Either way the agent learns price, network, and recipient address.
           </p>
         </div>
         <div class="card p-8 space-y-4">
           <div class="text-4xl font-bold text-blue-500/30">02</div>
-          <h3 class="text-lg font-semibold">Agent signs and pays</h3>
+          <h3 class="text-lg font-semibold">Agent pays — one request</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            MCP server signs an off-chain EIP-3009 authorization (zero gas) and retries with a
+            MCP server signs an off-chain EIP-3009 authorization (zero gas).
+            <strong class="text-gray-200">Proactive flow:</strong> payment attached on the first request — no 402 round-trip.
+            <strong class="text-gray-200">Reactive flow:</strong> retries after the 402 with a
             <code class="text-blue-400 bg-blue-400/10 px-1.5 py-0.5 rounded text-xs">PAYMENT-SIGNATURE</code> header.
-            Or uses <strong class="text-gray-200">proactive flow</strong> — reads robots.txt, signs locally, skips the 402 entirely.
           </p>
         </div>
         <div class="card p-8 space-y-4">
