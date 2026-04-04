@@ -43,7 +43,7 @@
       </h1>
       <p class="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed">
         An HTTP-native micropayment protocol for AI data access.
-        <span class="text-gray-200">Content providers set a price. AI agents pay per use — privately. Humans browse for free.</span>
+        <span class="text-gray-200">Content providers set a price. AI agents pay per use <b class="underline decoration-blue-600 decoration-[5px] underline-offset-4">privately</b>. Humans browse for free.</span>
       </p>
       <div class="flex flex-wrap gap-3 pt-2">
         <a href="https://nanocrawl.vercel.app/nanocrawl/dashboard" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-medium transition-colors inline-flex items-center gap-2">
@@ -65,13 +65,13 @@
         The web is broken for AI. Publishers block crawlers and earn nothing. Crawlers scrape anyway and risk lawsuits.
         We built the payment layer in between.
         <strong class="text-white">An MCP server gives any AI agent a wallet</strong> to pay for web content.
-        <strong class="text-white">A one-line middleware lets any content provider set a price.</strong>
-        Circle Nanopayments handle sub-cent, gas-free transactions — chain-agnostic across Arc and Base.
+        <strong class="text-white">A few lines of middleware lets any content provider set a price.</strong>
+        Circle Nanopayments handle sub-cent, gas-free transactions. It is chain-agnostic across Arc and Base.
         The result: Claude researches a topic across paid sites, pays fractions of a cent per page,
         and the content provider withdraws real USDC on-chain.
         <br /><br />
         But every payment is a data point. Without privacy, an agent's wallet becomes a
-        <strong class="text-white">public activity trail</strong> — revealing what it researches, which services it uses,
+        <strong class="text-white">public activity trail</strong>, revealing what it researches, which services it uses,
         and how much it's willing to pay. That's a competitive intelligence leak no company can afford.
         <strong class="text-white">NanoCrawl uses Unlink's ZK privacy pool</strong> to shield the agent's real identity:
         a fresh disposable wallet per session, permanently destroyed when the work is done.
@@ -273,6 +273,7 @@
         <span class="card px-4 py-2 text-sm text-gray-300">Circle Nanopayments</span>
         <span class="card px-4 py-2 text-sm text-gray-300">x402 Protocol (v2)</span>
         <span class="card px-4 py-2 text-sm text-gray-300">Arc Testnet</span>
+        <span class="card px-4 py-2 text-sm text-gray-300">Redis</span>
         <span class="card px-4 py-2 text-sm text-purple-300">Unlink ZK Privacy</span>
         <span class="card px-4 py-2 text-sm text-gray-300">Base Sepolia</span>
         <span class="card px-4 py-2 text-sm text-gray-300">Model Context Protocol</span>
