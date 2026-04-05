@@ -6,10 +6,10 @@ export default function Home() {
         <span className="text-lg font-bold tracking-tight">NanoCrawl</span>
         <div className="flex gap-4 text-sm">
           <a
-            href="https://nanocrawl.vercel.app/products"
+            href="#demo-sites"
             className="text-gray-400 hover:text-white transition"
           >
-            Demo
+            Demo Sites
           </a>
           <a
             href="https://nanocrawl.xyz/nanocrawl"
@@ -77,10 +77,10 @@ export default function Home() {
             View on GitHub
           </a>
           <a
-            href="https://nanocrawl.vercel.app/products"
+            href="#demo-sites"
             className="bg-white/5 hover:bg-white/10 text-white px-6 py-3 rounded-xl font-medium transition-colors border border-white/10"
           >
-            Browse Demo Store
+            Browse Demo Sites
           </a>
         </div>
       </section>
@@ -116,6 +116,93 @@ export default function Home() {
           to shield the agent&apos;s real identity: a fresh disposable wallet per
           session, permanently destroyed when the work is done.
         </p>
+      </section>
+
+      {/* Demo Sites */}
+      <section id="demo-sites" className="space-y-8 scroll-mt-8">
+        <h2 className="text-3xl font-bold">Live Demo Sites</h2>
+        <p className="text-gray-400 max-w-2xl">
+          Four real sites running on Vercel, each protected by{" "}
+          <code className="text-blue-400 bg-blue-400/10 px-1.5 py-0.5 rounded text-xs">nanocrawl-sdk</code>.
+          Humans browse free. AI agents pay per page.
+        </p>
+        <div className="grid md:grid-cols-2 gap-6">
+          <a href="https://shop-cannes.vercel.app" target="_blank" rel="noopener noreferrer"
+            className="card p-6 space-y-3 hover:border-blue-600/40 transition-colors group">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded">ShopCrawl</span>
+              <svg className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-semibold text-white">Product Catalog</h3>
+            <p className="text-sm text-gray-400">
+              30 products with specs, reviews, and pricing. AI shopping agents pay $0.002 per product page.
+              Every time an AI checks your prices, you earn.
+            </p>
+            <div className="flex gap-2 text-xs text-gray-500">
+              <span className="bg-white/5 px-2 py-0.5 rounded">$0.002/page</span>
+              <span className="bg-white/5 px-2 py-0.5 rounded">volume discounts</span>
+            </div>
+          </a>
+
+          <a href="https://demo-hire.vercel.app" target="_blank" rel="noopener noreferrer"
+            className="card p-6 space-y-3 hover:border-green-600/40 transition-colors group">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono text-green-400 bg-green-400/10 px-2 py-0.5 rounded">HireCrawl</span>
+              <svg className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-semibold text-white">Job Board</h3>
+            <p className="text-sm text-gray-400">
+              80 job listings with salary, requirements, and benefits. Volume discounts reward deep crawling
+              — recruiting AIs get 60% off after 60 pages.
+            </p>
+            <div className="flex gap-2 text-xs text-gray-500">
+              <span className="bg-white/5 px-2 py-0.5 rounded">$0.001/page</span>
+              <span className="bg-white/5 px-2 py-0.5 rounded">3-tier discounts</span>
+            </div>
+          </a>
+
+          <a href="https://demo-chef.vercel.app" target="_blank" rel="noopener noreferrer"
+            className="card p-6 space-y-3 hover:border-orange-600/40 transition-colors group">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono text-orange-400 bg-orange-400/10 px-2 py-0.5 rounded">ChefCrawl</span>
+              <svg className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-semibold text-white">Recipe Site</h3>
+            <p className="text-sm text-gray-400">
+              25 recipes across 5 cuisines. Food bloggers earn every time an AI reads their recipes.
+              Free listing, paid detail pages with ingredients and steps.
+            </p>
+            <div className="flex gap-2 text-xs text-gray-500">
+              <span className="bg-white/5 px-2 py-0.5 rounded">$0.002/recipe</span>
+              <span className="bg-white/5 px-2 py-0.5 rounded">volume discounts</span>
+            </div>
+          </a>
+
+          <a href="https://coin-cannes.vercel.app" target="_blank" rel="noopener noreferrer"
+            className="card p-6 space-y-3 hover:border-yellow-600/40 transition-colors group">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-mono text-yellow-400 bg-yellow-400/10 px-2 py-0.5 rounded">CoinCrawl</span>
+              <svg className="w-4 h-4 text-gray-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-semibold text-white">Crypto Dashboard</h3>
+            <p className="text-sm text-gray-400">
+              Live crypto prices from CoinGecko. Real-time data has real value — agents pay a premium
+              for fresh market data that changes every request.
+            </p>
+            <div className="flex gap-2 text-xs text-gray-500">
+              <span className="bg-white/5 px-2 py-0.5 rounded">$0.005/coin</span>
+              <span className="bg-white/5 px-2 py-0.5 rounded">live data</span>
+            </div>
+          </a>
+        </div>
       </section>
 
       {/* Architecture */}
@@ -463,10 +550,10 @@ export default function Home() {
         <p>NanoCrawl — ETHGlobal Cannes 2026</p>
         <div className="flex gap-6">
           <a
-            href="https://nanocrawl.xyz"
+            href="#demo-sites"
             className="hover:text-white transition"
           >
-            Demo
+            Demo Sites
           </a>
           <a
             href="https://nanocrawl.xyz/nanocrawl"
