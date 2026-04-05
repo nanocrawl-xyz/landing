@@ -12,7 +12,7 @@ export default function Home() {
             Demo
           </a>
           <a
-            href="https://nanocrawl.vercel.app/nanocrawl/dashboard"
+            href="https://nanocrawl.vercel.app/nanocrawl"
             className="text-gray-400 hover:text-white transition"
           >
             Dashboard
@@ -52,7 +52,7 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap gap-3 pt-2">
           <a
-            href="https://nanocrawl.vercel.app/nanocrawl/dashboard"
+            href="https://nanocrawl.vercel.app/nanocrawl"
             className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-medium transition-colors inline-flex items-center gap-2"
           >
             Live Dashboard
@@ -469,7 +469,7 @@ export default function Home() {
             Demo
           </a>
           <a
-            href="https://nanocrawl.vercel.app/nanocrawl/dashboard"
+            href="https://nanocrawl.xyz/nanocrawl"
             className="hover:text-white transition"
           >
             Dashboard
