@@ -6,6 +6,12 @@ export default function Home() {
         <span className="text-lg font-bold tracking-tight">NanoCrawl</span>
         <div className="flex gap-4 text-sm">
           <a
+            href="https://docs.nanocrawl.xyz/docs"
+            className="text-gray-400 hover:text-white transition"
+          >
+            Docs
+          </a>
+          <a
             href="#demo-sites"
             className="text-gray-400 hover:text-white transition"
           >
