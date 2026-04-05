@@ -58,10 +58,10 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap gap-3 pt-2">
           <a
-            href="https://nanocrawl.xyz/nanocrawl"
+            href="https://docs.nanocrawl.xyz/docs"
             className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-medium transition-colors inline-flex items-center gap-2"
           >
-            Live Dashboard
+            Docs
             <svg
               className="w-4 h-4"
               fill="none"
@@ -75,6 +75,12 @@ export default function Home() {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
+          </a>
+          <a
+            href="https://nanocrawl.xyz/nanocrawl"
+            className="bg-white/5 hover:bg-white/10 text-white px-6 py-3 rounded-xl font-medium transition-colors border border-white/10"
+          >
+            Live Dashboard
           </a>
           <a
             href="https://github.com/nanocrawl-xyz"
