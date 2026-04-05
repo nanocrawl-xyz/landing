@@ -9,7 +9,7 @@ export const proxy = withNanocrawl({
   // Pricing
   pricing: { '/blog': 0.001, '/products': 0.002 },
   defaultPrice: 0.001,
-  freeRoutes: ['/', '/about'],
+  freeRoutes: ['/about'],
 
   // Volume discounts — reward bots that crawl more
   volumeTiers: [
